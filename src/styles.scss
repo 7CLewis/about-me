@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+      height: 700px;
+    }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h2 {
+    color: #004374;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  h3 {
+    color: #004374;
+  }
+  
+  h4 {
+    font-size: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  
+  a {
+    color: #004374;
+    font-weight: bolder;
+  }

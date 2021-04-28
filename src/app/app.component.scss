@@ -1,4 +1,5 @@
 $main-dark-blue: #004374;
+$main-blue-background: #a6c2d6;
 
 :host ::ng-deep {
     .intro-header {
@@ -35,8 +36,19 @@ h5 {
     color: white;
   }
 
-  .p-button:hover {
+.p-button:hover {
     background-color: #052b55;
     border: 1px solid white;
     color: white;
-  }
+}
+#about, #experience, #projects, #skills, #contact {
+    padding: 40px;
+}
+
+#background-blue {
+    background-color: $main-blue-background;
+}
+
+.centered-row {
+    text-align: center;
+}
