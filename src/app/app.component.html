@@ -3,7 +3,7 @@
   <!--Navbar-->
   <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
     <mdb-navbar-brand>
-      <a class="logo navbar-brand waves-light" mdbWavesEffect href="#"><strong>Casey</strong></a>
+      <a class="logo navbar-brand waves-light" mdbWavesEffect href="#">Casey</a>
     </mdb-navbar-brand>
     <links id="navLinks">
       <ul class="navbar-nav mr-auto">
@@ -30,11 +30,11 @@
         <div class="row justify-content-center pt-5 mt-3 w-100">
           <div class="col-md-12">
             <div class="text-center">
-              <h2 class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>Casey Lewis</strong></h2>
+              <h2 class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s">Casey Lewis</h2>
               <a href="https://7clewis.github.io/AboutMeSite/assets/resume.pdf" target="_blank"><button pButton pRipple type="button" label="Resume"></button></a>
               <a href="https://github.com/7CLewis" target="_blank"><button style="margin-left: 50px;" pButton pRipple type="button" label="GitHub"></button></a>
               <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
-              <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Computer Science & Cybersecurity</strong></h5>
+              <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s">Computer Science & Cybersecurity</h5>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@
       </p>
     </div>
     <div class="col-md-4">
-      <img src="../assets/images/logo1.png" style="width: 100%; height: 90%"
+      <img src="../assets/images/logo.png" style="width: 100%; height: 90%"
         alt="Logo">
     </div>
     <div class="col-md-4">
@@ -87,8 +87,8 @@
       </div>
       <div class="col-md-8">
         <h3>Web Development Intern: Summer 2020 - Fall 2020</h3>
-        <p><strong>Summer: </strong>Began a rebuild of the Reliability Calculator website (using Angular 9) for the United States Nuclear Regulatory Commission for nuclear operations statistics.</p>
-        <p><strong>Fall: </strong>Created an IdentityServer4 with Identity .NET Core backend for an intranet application.</p>
+        <p>Summer: Began a rebuild of the Reliability Calculator website (using Angular 9) for the United States Nuclear Regulatory Commission for nuclear operations statistics.</p>
+        <p>Fall: Created an IdentityServer4 with Identity .NET Core backend for an intranet application.</p>
       </div>
     </div>
     <div class="row justify-content-center text-left">
@@ -131,6 +131,179 @@
   </div>
 </div>
 
+<!-- Projects Section -->
+<!-- TODO: Left-align for paragraphs and headers -->
+<div id="projects" class="container text-center">
+  <h2 class="display-4">Projects</h2>
+  <p class="lead">Work I've done on my own to sharpen my skills or learn something new</p>
+  <p>My full project portfolio can be found on <a href="https://github.com/7CLewis">GitHub</a></p>
+  <hr class="my-4">
+  <div class="row justify-content-center text-left">
+    <div class="col-md-4">
+      <h3>PiRate</h3>
+      <a href="/assets/images/PiRate_1.PNG" target="_blank"><img src="../assets/images/PiRate_1.PNG" class="img-fluid image-outlined" alt="PiRate" style="width: 90%; height: 20%"></a>
+      <a href="https://7clewis.github.io/PiRate/" target="_blank">GitHub Page</a>
+      <br>
+      <p>This is a standalone, customizable security testing tool implemented on a Raspberry Pi 3 device.</p>
+      <h4 class="font-weight-bold">Technologies Used</h4>
+      <ul>
+        <li>Angular 11</li>
+        <li>NodeJS</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>ExpressJS</li>
+        <li>Python 3</li>
+        <li>PrimeNG</li>
+      </ul>
+      <h4 class="font-weight-bold">My Role</h4>
+      <p>
+        I was tasked with building and designing the entire frontend of the project, and
+        connecting it to function properly with our NodeJS backend and Python controller.
+      </p>
+    </div>
+    <div class="col-md-4" style="padding-top:10px">
+      <h4 class="font-weight-bold">Project Difficulties and Solutions</h4>
+      <p>
+        I have gained quite a bit of experience in Angular over the past few years, so the real challenges
+        came when trying to connect it properly to the backend, and getting the backend to call the Python
+        controller to run the tests specified by the user on the frontend. I ended up deciding to make the 
+        Node Express Server spawn a subprocess that ran the Python controller with the user-specified test
+        list, and then having the server listen to stdout where the controller would return the results of
+        the executed tests.
+      </p>
+      <br>
+      <h4 class="font-weight-bold">Notable Features</h4>
+      <ul>
+        <li>Ability to create and add your own custom security test (i.e., port scan, specific vulnerability scan, etc.).</li>
+        <li>Data storage in browser's Local Storage, with option to save data to file.</li>
+        <li>Works on all major Operating Systems.</li>
+      </ul>
+    </div>
+  </div>
+  <hr class="my-4">
+  <div class="row justify-content-center text-left">
+    <div class="col-md-4">
+      <h3>Meevee</h3>
+      <a href="/assets/images/meevee_1.PNG" target="_blank"><img src="../assets/images/meevee_1.PNG" class="img-fluid image-outlined" alt="Meevee" style="width: 90%; height: 20%"></a>
+      <a href="https://github.com/7CLewis/meevee" target="_blank">GitHub Page</a>
+      <br>
+      <p>Chrome extension to automatically open Zoom meetings.</p>
+      <h4 class="font-weight-bold">Technologies Used</h4>
+      <ul>
+        <li>Angular 10</li>
+        <li>Angular Material UI</li>
+        <li>HTML5</li>
+        <li>SCSS/CSS3</li>
+        <li>Chrome Extension Management</li>
+        <li>Chrome Storage API</li>
+      </ul>
+      <h4 class="font-weight-bold">My Role</h4>
+      <p>
+        For this Chrome extension, I designed the "Add Event" page, and implemented the logic for the validate,
+        add, delete, and edit event functions.
+      </p>
+    </div>
+    <div class="col-md-4" style="padding-top:10px">
+      <h4 class="font-weight-bold">Project Difficulties and Solutions</h4>
+      <p>
+        No one on our team had ever created a browser extension before, so we all had to spend extensive time reading through
+        documentation and learning how it worked. We also ran into issues throughout the project with getting Chrome to open
+        when no other browser windows were currently open, and getting the alarm to hit at the right time. We solved the first
+        issue by making sure our extension had the proper permissions, and the second issue by storing all times in UTC, so that
+        there wouldn't be any timezone issues.
+      </p>
+      <br>
+      <h4 class="font-weight-bold">Notable Features</h4>
+      <ul>
+        <li>Extensive input validation.</li>
+        <li>Chrome extension creation.</li>
+        <li>Automatic browser opening.</li>
+      </ul>
+    </div>
+  </div>
+  <hr class="my-4">
+  <div class="row justify-content-center text-left">
+    <div class="col-md-4">
+      <h3>SAAST</h3>
+      <a href="/assets/images/saast_1.PNG" target="_blank"><img src="../assets/images/saast_1.PNG" class="img-fluid image-outlined" alt="Shodan API Automated Search Tool" style="width: 90%; height: 20%"></a>
+      <a href="https://github.com/7CLewis/SAAST_Project" target="_blank">GitHub Page</a>
+      <br>
+      <p>Shodan API Automated Search Tool for Linux</p>
+      <h4 class="font-weight-bold">Technologies Used</h4>
+      <ul>
+        <li>Python 3</li>
+        <li>Shodan</li>
+        <li>Cron</li>
+        <li>SMTP over SSL</li>
+        <li>Bash</li>
+      </ul>
+      <h4 class="font-weight-bold">My Role</h4>
+      <p>
+        I designed this project alone. The project allows users to enter a Shodan query and 
+        create a crontab for it, so the query runs repeatedly and alerts the user via email
+        when any of their specified notification parameters are hit.
+      </p>
+    </div>
+    <div class="col-md-4" style="padding-top:10px">
+      <h4 class="font-weight-bold">Project Difficulties and Solutions</h4>
+      <p>
+        Shodan's free version unfortunately has quite a few limitations to it, so it was difficult to
+        find tests that didn't require a paid membership. Once I did find some tests, however, I was
+        able to get it to run successfully. Another issue is that there are so many different tests a
+        user could run and so many different parameters they would want to specify to be notified about,
+        so I had to attempt to make the notification options as broad as possible, while still ensuring
+        that it would work properly.
+      </p>
+      <br>
+      <h4 class="font-weight-bold">Notable Features</h4>
+      <ul>
+        <li>Automated email notification system.</li>
+        <li>Crontab creation.</li>
+        <li>Automated bash script creation and execution.</li>
+        <li>Interaction with the Shodan API.</li>
+      </ul>
+    </div>
+  </div>
+  <hr class="my-4">
+  <div class="row justify-content-center text-left">
+    <div class="col-md-4">
+      <h3>Smash Shell</h3>
+      <a href="/assets/images/smash_1.PNG" target="_blank"><img src="../assets/images/smash_1.PNG" class="img-fluid image-outlined" alt="Smash" style="width: 90%; height: 20%"></a>
+      <a href="https://github.com/7CLewis/Smash-Shell" target="_blank">GitHub Page</a>
+      <br>
+      <p>A simplified Bash shell written in C</p>
+      <h4 class="font-weight-bold">Technologies Used</h4>
+      <ul>
+        <li>C</li>
+        <li>Make</li>
+        <li>Bash</li>
+      </ul>
+      <h4 class="font-weight-bold">My Role</h4>
+      <p>
+        Solo project. I created a simplified Bash shell to learn how it works.
+      </p>
+    </div>
+    <div class="col-md-4" style="padding-top:10px">
+      <h4 class="font-weight-bold">Project Difficulties and Solutions</h4>
+      <p>
+        Developing in C means figuring out segmentation faults and memory leakage. There
+        was a lot of manual memory allocation required for this project, so I
+        had to make sure to free that memory at the correct times to avoid early frees
+        and memory leakage. Process forking is also required to redirect file descriptors,
+        so I had to make sure to wait for that process to finish to avoid having a zombie process.
+      </p>
+      <br>
+      <h4 class="font-weight-bold">Notable Features</h4>
+      <ul>
+        <li>Command piping</li>
+        <li>I/O redirection</li>
+        <li>Manual memory allocation</li>
+        <li>File opening & closing, and reading & writing</li>
+        <li>Command history saving and viewing</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 <!-- Section: Contact-->
 <div id="background-blue" class="container-fluid">
@@ -140,11 +313,11 @@
     <hr class="my-4">
     <div class="row justify-content-center text-left">
       <div class="col-md-4">
-        <p class="align-top"><i class="fas fa-3x fa-envelope-square"></i> <strong> Email</strong> - <a href="mailto: casey.lewis08@gmail.com">casey.lewis08@gmail.com</a></p>
+        <p class="align-top"><i class="fas fa-3x fa-envelope-square"></i>  <span class="font-weight-bold" style="padding-left: 5px;">Email - </span><a href="mailto: casey.lewis08@gmail.com">casey.lewis08@gmail.com</a></p>
 
       </div>
       <div class="col-md-4">
-        <p><i class="fab fa-3x fa-linkedin"></i> <strong> LinkedIn: </strong> <a href="https://www.linkedin.com/in/casey-lewis-5111a5149/">Casey Lewis</a></p>
+        <p><i class="fab fa-3x fa-linkedin"></i>  <span class="font-weight-bold" style="padding-left: 5px;">LinkedIn - </span>  <a href="https://www.linkedin.com/in/casey-lewis-5111a5149/">Casey Lewis</a></p>
       </div>
     </div>
     <hr class="my-4">
