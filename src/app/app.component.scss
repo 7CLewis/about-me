@@ -1,0 +1,42 @@
+$main-dark-blue: #004374;
+
+:host ::ng-deep {
+    .intro-header {
+        height: unset;
+    }
+    .top-nav-collapse {
+        background-color: $main-dark-blue;
+    }
+    .view {
+        height: 100vh;
+    }
+    .navbar:not(.top-nav-collapse) {
+        background: transparent;
+    }
+    @media (max-width: 768px) {
+        .navbar:not(.top-nav-collapse) {
+            background: black;
+        }
+    }
+}
+h1 {
+    letter-spacing: 8px;
+}
+h5 {
+    letter-spacing: 3px;
+}
+.hr-light {
+    border-top: 3px solid white;
+    width: 80px;
+}
+.p-button {
+    background-color: #020627;
+    border: 1px solid white;
+    color: white;
+  }
+
+  .p-button:hover {
+    background-color: #052b55;
+    border: 1px solid white;
+    color: white;
+  }
