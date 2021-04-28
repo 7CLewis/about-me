@@ -19,5 +19,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Run build script
-        run: sudo .github/workflows/build.sh
+        run: sudo bash .github/workflows/build.sh
         shell: bash
